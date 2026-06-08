@@ -1,0 +1,6 @@
+wav_filename,dataset,filepath,text,dominant_emotion,p_happy,p_sad,p_angry,p_surprise,speaker,reference_filepath,reference_text
+1007_TSI_ANG_XX,cremad,cremad/1007_TSI_ANG_XX.wav,The surface is slick.,angry,0.25,0.0,0.75,0.0,1007,cremad/1007_TIE_NEU_XX.wav,That is exactly what happened.
+1002_IWW_HAP_XX,cremad,cremad/1002_IWW_HAP_XX.wav,I wonder what this is about.,happy,0.875,0.0,0.125,0.0,1002,cremad/1002_MTI_NEU_XX.wav,Maybe tomorrow it will be cold.
+1028_IWL_SAD_XX,cremad,cremad/1028_IWL_SAD_XX.wav,I would like a new alarm clock.,sad,0.0909,0.9091,0.0,0.0,1028,cremad/1028_DFA_NEU_XX.wav,Don't forget a jacket.
+Ses01F_impro01_F013,iemocap,iemocap/Ses01F_impro01_F013.wav,How long have you been working here?,angry,0.1429,0.0,0.7143,0.1429,Ses01F_F,iemocap/Ses01F_script01_3_F003.wav,"I'm not sorry, no. But I'm...I can't stay."
+Ses01F_script01_3_M014,iemocap,iemocap/Ses01F_script01_3_M014.wav,You felt something that far back?,surprise,0.3333,0.0,0.0,0.6667,Ses01F_M,iemocap/Ses01F_script01_1_M034.wav,"I'll get out.  I'll get married and I'll move somewhere else, maybe New York."

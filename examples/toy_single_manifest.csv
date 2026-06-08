@@ -1,0 +1,6 @@
+wav_filename,speaker,emotion,text,filepath,reference_filepath,reference_text,split
+0018_000610,0018,angry,"As soon as she went in, there was disorder.",esd/0018_000610.wav,esd/0018_000162.wav,I lent George three pounds.,train
+0018_000860,0018,happy,"Kitty, can you play chess?",esd/0018_000860.wav,esd/0018_000321.wav,Called out the cloud.,train
+0018_001150,0018,sad,"Well anyhow it didn't rain, he said.",esd/0018_001150.wav,esd/0018_000086.wav,And tick a tack too.,train
+0019_001658,0019,surprise,"Mum shuts one's mouth up, doesn't it.",esd/0019_001658.wav,esd/0019_000154.wav,He dreamt them all night.,train
+0019_000164,0019,neutral,His large mouth curled into a sneer.,esd/0019_000164.wav,esd/0019_000221.wav,I am a selfish sinner.,train

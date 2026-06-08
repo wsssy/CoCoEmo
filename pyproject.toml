@@ -1,0 +1,30 @@
+[project]
+name = "cocoemo"
+version = "0.1.0"
+description = "CoCoEmo: Composable and Controllable Human-Like Emotional TTS via Activation Steering"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Siyi Wang", email = "siyi.wang.4@student.unimelb.edu.au" },
+]
+
+# Core deps only (backbone-specific deps are in env/*.txt).
+dependencies = [
+    "torch>=2.4",
+    "torchaudio",
+    "numpy>=1.26",
+    "pandas",
+    "scikit-learn",
+    "tqdm",
+]
+
+[project.urls]
+Homepage = "https://github.com/wsssy/CoCoEmo"
+
+[tool.setuptools.packages.find]
+include = ["cocoemo*"]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"

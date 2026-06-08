@@ -1,0 +1,21 @@
+# Environment for the evaluation stage (operates on synthesized wavs only).
+#
+# No TTS backbone required, so this can be a small standalone env (or you can reuse
+# a backbone env). Metric models: Emotion2Vec (E-SIM/TEP), Whisper-Large-V3 (WER),
+# WavLM-base-sv (S-SIM).
+#
+#   conda create -n cocoemo_eval python=3.10 -y
+#   conda activate cocoemo_eval
+#   pip install -r env/eval.txt
+
+torch==2.6.0
+torchaudio==2.6.0
+numpy>=1.26
+funasr==1.3.0             # Emotion2Vec (iic/emotion2vec_plus_large)
+modelscope==1.20.0        # model hub for funasr
+openai-whisper==20250625  # Whisper-Large-V3 for WER
+transformers>=4.46        # WavLM-base-sv speaker embeddings (version-tolerant here)
+jiwer==4.0.0              # WER computation
+word2num==0.1.2           # number normalization in WER
+librosa==0.10.2
+soundfile==0.12.1

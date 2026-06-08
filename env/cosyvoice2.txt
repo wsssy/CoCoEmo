@@ -1,0 +1,42 @@
+# Environment for the CosyVoice2 backbone (extraction + synthesis stages).
+#
+# CosyVoice2 cannot share an environment with IndexTTS2; use a dedicated env.
+#
+# --- HPC modules (Spartan / similar) ---
+#   module load Anaconda3/2024.02-1
+#   module load CUDA/12.4.1
+#   module load cuDNN/9.6.0.74-CUDA-12.4.1
+#
+# --- create the env ---
+#   conda create -n cocoemo_cv2 python=3.10 -y
+#   conda activate cocoemo_cv2
+#   pip install -r env/cosyvoice2.txt
+#
+# Then clone CosyVoice and point COSYVOICE_ROOT at it:
+#   git clone https://github.com/FunAudioLLM/CosyVoice
+#   export COSYVOICE_ROOT=/abs/path/to/CosyVoice   # adds it + Matcha-TTS to sys.path
+# and download the CosyVoice2-0.5B checkpoint (pass as --model-dir).
+#
+# IMPORTANT: transformers MUST be 4.51.x. Newer majors (5.x) load the Qwen2 SLM in
+# mixed bf16/fp32 and break CosyVoice2 generation (Float vs BFloat16 in q_proj).
+
+torch==2.6.0
+torchaudio==2.6.0
+transformers==4.51.3      # pinned: 5.x breaks CosyVoice2's Qwen2 LM dtype
+tokenizers>=0.21,<0.22    # required by transformers 4.51.3
+huggingface-hub>=0.30,<1.0
+numpy>=1.26,<2.3
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas==2.3.3
+tqdm==4.67.3
+HyperPyYAML==1.2.3
+librosa==0.10.2
+soundfile==0.12.1
+onnxruntime-gpu==1.23.2
+modelscope==1.20.0
+matplotlib==3.10.9        # only needed for plotting scripts
+seaborn==0.13.2           # only needed for plotting scripts
+
+# CosyVoice itself is installed from its own repo (COSYVOICE_ROOT), not via pip.
+# See https://github.com/FunAudioLLM/CosyVoice for its full requirements.
