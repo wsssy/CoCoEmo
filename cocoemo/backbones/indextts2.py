@@ -4,7 +4,7 @@ Thin wrapper over the proven steering code: model loading, the paper's steering
 constants, and the IndexTTS2-specific entry points re-exported from the shared
 steering core.
 
-Environment: the IndexTTS2 conda env (see ``env/indextts2.txt``).
+Environment: the IndexTTS2 environment (follow official setup, then ``pip install -e .`` CoCoEmo).
 Requirements:
   * a local clone of IndexTTS2 (https://github.com/index-tts/index-tts) with the
     ``INDEXTTS_ROOT`` environment variable pointing at it
