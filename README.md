@@ -1,4 +1,4 @@
-# CoCoEmo: Composable and Controllable Human-Like Emotional TTS via Activation Steering
+# CoCoEmo: Composable and Controllable Human-Like Emotional TTS via Activation Steering (ICML 2026)
 
 ## Overview
 Implementation for *CoCoEmo* (ICML 2026). CoCoEmo steers the
