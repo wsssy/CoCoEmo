@@ -1,5 +1,9 @@
 # CoCoEmo: Composable and Controllable Human-Like Emotional TTS via Activation Steering (ICML 2026)
 
+[Demo](file:///Users/swang4416/projects_local/cocoemo_demo/index.html) | [Paper](https://arxiv.org/abs/2602.03420)
+
+
+
 ## Overview
 Implementation for *CoCoEmo* (ICML 2026). CoCoEmo steers the
 **speech language model (SLM)** of hybrid TTS systems with emotion direction vectors to
