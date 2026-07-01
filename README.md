@@ -1,6 +1,6 @@
 # CoCoEmo: Composable and Controllable Human-Like Emotional TTS via Activation Steering (ICML 2026)
 
-[Demo](https://github.com/wsssy/cocoemo_demo) | [Paper](https://arxiv.org/abs/2602.03420)
+[Demo](https://wsssy.github.io/cocoemo_demo/) | [Paper](https://arxiv.org/abs/2602.03420)
 
 
 
